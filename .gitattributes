@@ -1,5 +1,7 @@
 # Basic .gitattributes for a python repo.
-*.rb linguist-language=Python
+static/* linguist-vendored
+templates/* linguist-vendored
+
 
 # Source files
 # ============
