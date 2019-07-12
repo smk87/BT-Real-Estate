@@ -9,7 +9,8 @@
 __pycache__/
 local_settings.py
 db.sqlite3
-media
+/media
+/static
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
@@ -49,6 +50,8 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+
+.vscode/
 
 # Installer logs
 pip-log.txt
