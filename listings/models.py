@@ -7,7 +7,7 @@ from datetime import datetime
 
 class Listing(models.Model):
     realtor = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING)
-    tittle = models.CharField(max_length=200)
+    title = models.CharField(max_length=200)
     address = models.CharField(max_length=200)
     city = models.CharField(max_length=200)
     state = models.CharField(max_length=200)
@@ -32,4 +32,4 @@ class Listing(models.Model):
     list_date = models.DateTimeField(default=datetime.now(), blank=True)
 
     def __str__(self):
-        return self.tittle  # Set the visible name in the admin area
+        return self.title  # Set the visible name in the admin area
